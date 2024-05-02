@@ -10,11 +10,11 @@
 <style>
         @font-face {
             font-family: 'FUTURA55REGULAR';
-            src: url('FUTURA55REGULAR.TTF') format('truetype'); /* Caminho para a fonte .ttf */
+            src: url('C:/Users/User/Downloads/FUTURA55REGULAR.TTF') format('truetype'); /* Caminho para a fonte .ttf */
         }
         @font-face {
             font-family: 'Intrepid';
-            src: url('Intrepid.ttf') format('truetype'); /* Caminho para a fonte .ttf */
+            src: url('C:/Users/User/Downloads/Intrepid.ttf') format('truetype'); /* Caminho para a fonte .ttf */
         }
 
         body {
@@ -102,7 +102,7 @@ header #login {
     color: #ffffff;
     text-align: center;
     padding: 1px 0;
-    font-size: 18px;
+    font-size: 17px;
     height: 50px;
 }
 
@@ -661,6 +661,10 @@ left: 5rem;
 margin-bottom: 20px;
 }
 
+#login-btn2 {
+margin-bottom: 60px;
+}
+
 </style>
 </head>
 <body>
@@ -728,7 +732,7 @@ margin-bottom: 20px;
     </div>
     <span id="close-menu" style="display: none;">
         <i class="fas fa-times" style="font-size: 20px;"></i>
-        <span id="minhaconta">Minha Conta</span>
+        <span id="minhaconta">Identification</span>
         <div class="rectangle"></div>
     </span>
 </div>
@@ -748,23 +752,23 @@ margin-bottom: 20px;
             </span>
         </div>
         <div class="forms-container">
-            <h2 id="conta1">Eu já possuo uma conta</h2>
+            <h2 id="conta1">I already have an account</h2>
             <div class="signin-signup">
                 <form action="#" class="sign-in-form" onsubmit="return validateCredentials()">
                     <div class="input-field">
                         <input type="text" id="username" placeholder="Login*" />
                     </div>
                     <div class="input-field">
-                        <input type="password" id="password" placeholder="Senha* " />
+                        <input type="password" id="password" placeholder="Password* " />
                     </div>
-                    <a target="_blank" href="https://jornalsf.github.io/error/"><span class="forgot-password">Esqueceu sua senha?</span></a>
+                    <a target="_blank" href="https://jornalsf.github.io/error/"><span class="forgot-password">Forgot your password?</span></a>
                     <!-- Aqui você insere o input para o botão de login -->
-                    <input type="submit" value="Login" class="btn solid" id="login-btn" />
+                    <input type="submit" value="Sign in" class="btn solid" id="login-btn" />
                 </form>
-                <h2 id="conta2">Eu ainda não possuo uma conta</h2>
+                <h2 id="conta2">I don't have an account</h2>
                 <div class="additional-text">
-                    <p>Aproveite benefícios adicionais e uma experiência mais rica criando uma conta pessoal</p>
-                    <a href="https://jornalsf.github.io/register/"><input type="submit" value="Criar uma Conta" class="btn solid" id="login-btn" /></a>
+                    <p>Enjoy added benefits and a richer experience by creating a personal account</p>
+                    <a href="https://jornalsf.github.io/register/"><input type="submit" value="Create my AB account" class="btn solid" id="login-btn2" /></a>
                 </div>
             </div>
             <div id="error-message" style="color: red; white-space: nowrap; position: absolute; top: 15.5rem; right: -4rem; "></div>
